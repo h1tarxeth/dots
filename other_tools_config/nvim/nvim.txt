@@ -1,1 +1,0 @@
-i use astro vim / soon mainkg my own nvim config
