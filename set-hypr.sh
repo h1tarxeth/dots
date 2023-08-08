@@ -99,7 +99,6 @@ if [[ $CFG =~ ^[Yy]$ ]]; then
     cp -r dotconfig/dunst ~/.config/ 2>&1 | tee -a $LOG
     cp -r dotconfig/hypr ~/.config/ 2>&1 | tee -a $LOG
     cp -r dotconfig/kitty ~/.config/ 2>&1 | tee -a $LOG
-    cp -r dotconfig/pipewire ~/.config/ 2>&1 | tee -a $LOG
     cp -r dotconfig/rofi ~/.config/ 2>&1 | tee -a $LOG
     cp -r dotconfig/swaylock ~/.config/ 2>&1 | tee -a $LOG
     cp -r dotconfig/waybar ~/.config/ 2>&1 | tee -a $LOG
