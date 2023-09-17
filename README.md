@@ -46,17 +46,6 @@
 - Arch install with sway as DE is recommended .
 - Ensure base-devel and git is installed before proceeding.
 
-## **Installation with script**
-
-``` bash
-
-# if needto  set execute permission on your script using chmod command :  
-# chmod +x set-hypr.sh
-
-./set-hypr.sh
-
-```
-
 ## Installation
 
 - Yay
@@ -70,8 +59,6 @@ makepkg -si
 ```
 
 ### Required Packages
-
-**(not for script user)**
 
 ``` bash
 yay -S hyprland polkit-gnome ffmpeg neovim viewnior rofi      \
@@ -96,6 +83,7 @@ cp -r ./conf/* ~/.config/
 
 ```
 then enjoy...
+
 # credits for the code
 
 ***this project was not possible with this legends***  (arigatougozaimasu)
