@@ -83,7 +83,7 @@ brillo pamixer
 ```bash
 # git clone this repo
 # cd in it 
-cp -r ./conf/* ~/.config/
+cp -r config/* ~/.config/
 
 ```
 then enjoy...
