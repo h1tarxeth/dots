@@ -24,11 +24,13 @@
 ## system info
 
 ```
+├── catppuccin mocha (theme)
+│
 ├── Arch linux (os)
 │
 ├── Hyprland (compositor)
 │   │
-│   ├── Zsh (powerlevel 10k) (shell)
+│   ├── Zsh (starship) (shell)
 │   │   └── Kitty (terminal)
 │   │        ├── Neofetch (fetch)
 │   │        ├── cava (visualizer)
