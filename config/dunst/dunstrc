@@ -1,24 +1,19 @@
 [global]
+
+
+[urgency_normal]
+background = "#1E1E2E"
+foreground = "#CDD6F4"
+
+[urgency_critical]
+background = "#1E1E2E"
+foreground = "#CDD6F4"
+frame_color = "#FAB387"
+[global]
   font = "Product Sans"
 
-	# Allow a small subset of html markup:
-	# <b>bold</b>
-	# <i>italic</i>
-	# <s>strikethrough<s/>
-	# <u>underline</u>
-	#
-	# for a complete reference see http://developer.gnome.org/pango/stable/PangoMarkupFormat.html
-	# If markup is not allowed, those tags will be stripped out of the message.
 	allow_markup = yes
 
-	# The format of the message. Possible variables are:
-	#   %a  appname
-	#   %s  summary
-	#   %b  body
-	#   %i  iconname (including its path)
-	#   %I  iconname (without its path)
-	#   %p  progress value if set ([  0%] to [100%]) or nothing
-	# Markup is allowed
 	format = "<b>%s</b>\n%b"
 
 	# Sort messages by urgency
@@ -85,8 +80,8 @@
     progress_bar_max_width = 300
 
 	# Frame
-	frame_width = 3
-	frame_color = "#1C2325"
+	frame_width = 2
+    frame_color = "#89B4FA"
 
 	# The transparency of the window. range: [0; 100]
 	# This option will only work if a compositing windowmanager is present (e.g. xcompmgr, compiz, etc..)
@@ -181,25 +176,22 @@
 
 [urgency_low]
 	timeout = 6
-	background = "#0d0f16"
-	foreground = "#CDD6F4"
-	frame_color = "#191d24"
+    background = "#1E1E2E"
+    foreground = "#CDD6F4"
 	highlight = "#7ba5dd"
 
 [urgency_normal]
 	# script = ~/.config/dunst/scripts/playNotificationSound.sh
 	timeout = 6
-	background = "#0d0f16"
-	foreground = "#CDD6F4"
-	frame_color = "#0d0f16"
+    background = "#1E1E2E"
+    foreground = "#CDD6F4"
 	highlight = "#7ba5dd"
 
 [urgency_critical]
 	script = ~/.config/dunst/scripts/playNotificationSound.sh
 	timeout = 6
-	background = "#0d0f16"
-	foreground = "#CDD6F4"
-	frame_color = "#0d0f16"
+    background = "#1E1E2E"
+    foreground = "#CDD6F4"
 	highlight = "#ee6a70"
 
 [backlight]

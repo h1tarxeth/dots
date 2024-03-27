@@ -15,19 +15,19 @@ mesg="Installed Packages : `pacman -Q | wc -l` (pacman)"
 
 if [[ ( "$theme" == *'type-1'* ) || ( "$theme" == *'type-3'* ) || ( "$theme" == *'type-5'* ) ]]; then
 	list_col='1'
-	list_row='5'
+	list_row='6'
 elif [[ ( "$theme" == *'type-2'* ) || ( "$theme" == *'type-4'* ) ]]; then
-	list_col='5'
+	list_col='6'
 	list_row='1'
 fi
 
 # CMDs (add your apps here)
 term_cmd='kitty'
 file_cmd='thunar'
-text_cmd='obsidian'
+text_cmd='Mousepad'
 web_cmd='firefox'
 music_cmd='spotify-launcher'
-
+setting_cmd='xfce4-settings-manager'
 
 # Options
 layout=`cat ${theme} | grep 'USE_ICON' | cut -d'=' -f2`
@@ -37,13 +37,14 @@ if [[ "$layout" == 'NO' ]]; then
 	option_3=" Editor <span weight='light' size='small'><i>($text_cmd)</i></span>"
 	option_4=" Browser <span weight='light' size='small'><i>($web_cmd)</i></span>"
 	option_5=" Music <span weight='light' size='small'><i>($music_cmd)</i></span>"
+	option_6=" Settings <span weight='light' size='small'><i>($setting_cmd)</i></span>"
 else
 	option_1=""
 	option_2=""
 	option_3=""
 	option_4=""
 	option_5=""
-
+	option_6=""
 fi
 
 # Rofi CMD
@@ -74,6 +75,8 @@ run_cmd() {
 		${web_cmd}
 	elif [[ "$1" == '--opt5' ]]; then
 		${music_cmd}
+	elif [[ "$1" == '--opt6' ]]; then
+		${setting_cmd}
 	fi
 }
 
@@ -94,5 +97,8 @@ case ${chosen} in
         ;;
     $option_5)
 		run_cmd --opt5
+        ;;
+    $option_6)
+		run_cmd --opt6
         ;;
 esac

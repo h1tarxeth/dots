@@ -51,7 +51,7 @@ if [[ "$layout" == 'NO' ]]; then
 	option_1=" Increase"
 	option_2=" Optimal"
 	option_3=" Decrease"
-	option_4=" Settings"
+	option_4=" max"
 else
 	option_1=""
 	option_2=""
@@ -85,7 +85,7 @@ run_cmd() {
 	elif [[ "$1" == '--opt3' ]]; then
 		light -U 5
 	elif [[ "$1" == '--opt4' ]]; then
-		xfce4-power-manager-settings
+		light -A 100
 	fi
 }
 

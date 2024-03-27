@@ -1,4 +1,3 @@
-
 <div align="center"><h1><b>My Dots.</b></h1></div>
 
 <div align="center">
@@ -21,7 +20,9 @@
 ![](https://github.com/h1tarxeth/Dots/blob/main/images/3.jpeg)
 ![](https://github.com/h1tarxeth/Dots/blob/main/images/4.jpeg)
 ![](https://github.com/h1tarxeth/Dots/blob/main/images/5.jpeg)
+
 ## system info
+
 ```
 ├── Arch linux (os)
 │
@@ -29,12 +30,12 @@
 │   │
 │   ├── Zsh (powerlevel 10k) (shell)
 │   │   └── Kitty (terminal)
-│   │        ├── Neofetch (fetch) 
-│   │        ├── cava (visualizer) 
-│   │        └── Ranger (file manger)  
+│   │        ├── Neofetch (fetch)
+│   │        ├── cava (visualizer)
+│   │        └── Ranger (file manger)
 │   │
 │   ├── Other
-│   │    ├── Rofi (applauncher) 
+│   │    ├── Rofi (applauncher)
 │   │    ├── Dunst (notification)
 │   │    ├── Waybar (bar)
 │   │    ├── Swaylock (lock)
@@ -42,8 +43,9 @@
 │   │    ├── Spotify (spicefy)(music)
 │   │    ├── Obsidian (notes)
 │   │    └── Firefox(betterfox)(Browser)
-│   │  
+│   │
 ```
+
 ## ⚠️ **Do it at our own risk!** 🛑
 
 ## Prerequisites
@@ -54,9 +56,9 @@
 ## Installation
 
 - Yay
-**Important**: Execute the following commands as a regular user, NOT as root!
+  **Important**: Execute the following commands as a regular user, NOT as root!
 
-``` bash
+```bash
 git clone https://aur.archlinux.org/yay-bin
 cd yay-bin
 makepkg -si
@@ -64,33 +66,34 @@ makepkg -si
 
 ### Required Packages
 
-``` bash
+```bash
 yay -S hyprland polkit-gnome ffmpeg neovim viewnior rofi      \
 pavucontrol thunar starship wl-clipboard wf-recorder swaybg   \
 grimblast-git ffmpegthumbnailer tumbler playerctl             \
 noise-suppression-for-voice thunar-archive-plugin kitty       \
 waybar-hyprland wlogout swaylock-effects sddm-git pamixer     \
-nwg-look-bin nordic-theme papirus-icon-theme dunst otf-sora   \
+nwg-look-bin nordic-theme dunst otf-sora   \
 ttf-nerd-fonts-symbols-common otf-firamono-nerd inter-font    \
 ttf-fantasque-nerd noto-fonts noto-fonts-emoji ttf-comfortaa  \
 ttf-jetbrains-mono-nerd ttf-icomoon-feather ttf-iosevka-nerd  \
 adobe-source-code-pro-fonts brightnessctl hyprpicker-git light \
-brillo pamixer 
+brillo pamixer
 ```
 
 ## copy the file in conf in to .config
 
 ```bash
 # git clone this repo
-# cd in it 
+# cd in it
 cp -r config/* ~/.config/
 
 ```
+
 then enjoy...
 
 # credits for the code
 
-***this project was not possible with this legends***  (arigatougozaimasu)
+**_this project was not possible with this legends_** (arigatougozaimasu)
 
 - [@1amSimp1e](https://github.com/1amSimp1e)
 - [@ChrisTitusTech](https://github.com/ChrisTitusTech)

@@ -11,7 +11,7 @@ theme="$type/$style"
 
 # Theme Elements
 prompt='Quick Links'
-mesg="Using '$BROWSER' as web browser"
+mesg="fast!"
 
 if [[ ( "$theme" == *'type-1'* ) || ( "$theme" == *'type-3'* ) || ( "$theme" == *'type-5'* ) ]]; then
 	list_col='1'
@@ -34,15 +34,15 @@ if [[ "$layout" == 'NO' ]]; then
 	option_2=" Gmail"
 	option_3=" Youtube"
 	option_4=" Github"
-	option_5="󰙯  Discord"
-	option_6=" Ig"
+	option_5=" Reddit"
+	option_6=" Twitter"
 else
 	option_1=""
 	option_2=""
 	option_3=""
 	option_4=""
-	option_5="󰙯"
-	option_6=""
+	option_5=""
+	option_6=""
 fi
 
 # Rofi CMD
@@ -71,11 +71,11 @@ run_cmd() {
 	elif [[ "$1" == '--opt3' ]]; then
 		xdg-open 'https://www.youtube.com/'
 	elif [[ "$1" == '--opt4' ]]; then
-		xdg-open 'https://github.com/h1tarxeth/'
+		xdg-open 'https://www.github.com/'
 	elif [[ "$1" == '--opt5' ]]; then
-		xdg-open 'https://discord.com/app'
+		xdg-open 'https://www.reddit.com/'
 	elif [[ "$1" == '--opt6' ]]; then
-		xdg-open 'https://www.instagram.com/'
+		xdg-open 'https://www.twitter.com/'
 	fi
 }
 
