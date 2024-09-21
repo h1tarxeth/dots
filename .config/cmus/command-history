@@ -1,0 +1,25 @@
+q
+qq
+set shuffle=off
+showbind common 6
+showbind common +
+showbind common ,
+showbind common
+showbind 
+save
+load 
+?
+refresh
+reshuffle
+1
+s
+pl-create core
+colorscheme rose-pine
+add
+a
+svae
+cums
+cums-tutor
+help 
+q1
+q!

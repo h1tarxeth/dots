@@ -1,0 +1,124 @@
+@define-color base            #191724;
+@define-color surface         #1f1d2e;
+@define-color overlay         #26233a;
+
+@define-color muted           #6e6a86;
+@define-color subtle          #908caa;
+@define-color text            #e0def4;
+
+@define-color love            #eb6f92;
+@define-color gold            #f6c177;
+@define-color rose            #ebbcba;
+@define-color pine            #31748f;
+@define-color foam            #9ccfd8;
+@define-color iris            #c4a7e7;
+
+@define-color highlightLow    #21202e;
+@define-color highlightMed    #403d52;
+@define-color highlightHigh   #524f67;
+
+* {
+  color: @text;
+  font-family: fira-code;
+  font-size: 12px;
+  border-radius: 20px;
+  min-height: 0;
+  margin: 0;
+  border: 0;
+}
+
+window {
+}
+window#waybar {
+  background: rgba(0, 0, 0, 0);
+}
+/*-----module groups----*/
+.modules-right {
+  background-color: @base;
+  margin: 2px 10px 0 0;
+  padding: 0 10px 0 0;
+}
+.modules-center {
+  background-color: @base;
+  margin: 2px 0 0 0;
+}
+.modules-left {
+  background-color: @base;
+  padding: 0 10px;
+  margin: 2px 0 0 5px;
+}
+/*-----modules indv----*/
+#workspaces button {
+  color: @text;
+  padding: 1px 5px;
+  background-color: @base;
+  opacity: 0.5;
+}
+
+#workspaces button.active {
+  color: @rose;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+
+#workspaces button:hover {
+  box-shadow: inherit;
+  background-color: @surface;
+}
+
+#workspaces button.focused {
+  background-color: @surface;
+}
+
+#workspaces button.urgent {
+  color: @base;
+  background-color: @red;
+  /* border-radius: 15px; */
+}
+
+#clock,
+#battery,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#custom-power {
+  padding: 0 10px;
+}
+
+#custom-power {
+  border-radius: 100px;
+  margin: 5px 5px;
+  padding: 1px 1px 1px 6px;
+  color: @love;
+}
+
+#clock,
+#custom-playerlabel {
+  color: @gold;
+}
+
+#battery {
+  color: @iris;
+}
+#network {
+  color: @foam;
+}
+
+#pulseaudio {
+  color: @rose;
+}
+
+#pulseaudio.muted {
+  color: @love;
+}
+
+#battery.charging {
+  color: @gold;
+}
+#battery.warning:not(.charging) {
+  color: @love;
+}
+#battery.critical:not(.charging) {
+  color: @love;
+}
