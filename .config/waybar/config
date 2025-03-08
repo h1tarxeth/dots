@@ -1,0 +1,98 @@
+{
+  "position": "top",
+  "height": 35,
+  "margin-top": 0,
+  "modules-left": ["sway/workspaces"],
+  "modules-center": ["clock","custom/playerlabel"],
+  "modules-right": ["tray","battery","network","pulseaudio"],
+
+    "hyprland/workspaces": {
+    "disable-scroll": true,
+    "all-outputs": true,
+    "format": "{icon}",
+    "format-icons": {
+      "default":"",
+      "active":"",
+    }
+  },
+
+    "clock": {
+        "format": "{:%I:%M}",
+        "format-alt": "{:%a %b %d}",
+        "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
+     },
+    "backlight": {
+        "device": "DP-1",
+        "format": "{icon}",
+        "format-icons": [
+            "󰃞 ",
+            "󰃟 ",
+            "󰃠 ",
+        ],
+        "on-click": "{percent}%",
+     },
+    "network": {
+        "format-wifi": "󰖩",
+        "format-ethernet": "󰈀",
+        "format-disconnected": "Disconnected  ",
+    },
+    "pulseaudio": {
+        "format": "{icon}",
+        "format-alt": "{icon} {volume}%",
+        "format-bluetooth": "  {volume}%",
+        "format-bluetooth-muted": "󰝟 ",
+        "format-muted": "󰝟 ",
+        "format-icons": {
+            "headphone": " ",
+            "hands-free": "",
+            "headset": "",
+            "phone": " ",
+            "portable": " ",
+            "car": " ",
+            "default": [
+                " ",
+                " ",
+                " "
+            ]
+        },
+        "on-double-click": "pavucontrol"
+    },
+    "battery": {
+        "bat": "BAT0",
+        "adapter": "ADP0",
+        "interval": 60,
+        "states": {
+            "warning": 25,
+            "critical": 15
+        },
+	"full":99,
+        "max-length": 20,
+        "format": "{icon}",
+        "format-warning": "{icon} {capacity}%",
+        "format-critical": "{icon} {capacity}%",
+        "format-charging": "",
+        "format-plugged": "",
+        "format-alt": "{capacity}%",
+        "format-full": "",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+    },
+    "custom/power-menu": {
+        "format": "<span color='#eb6f92'>⏻ </span>",
+        "on-click": "wlogout",
+    },
+    "custom/playerlabel": {
+        "format": "/   <span>{}</span>  ",
+        "return-type": "json",
+        "max-length": 20,
+        "exec": "playerctl -a metadata --format '{\"text\": \"{{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+        "on-click": "playerctl play-pause",
+        "on-click-middle": "playerctl previous",
+        "on-click-right": "playerctl next",
+    },
+}
