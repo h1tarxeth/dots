@@ -14,8 +14,10 @@ set $menu rofi -show drun
 
 exec mako
 exec waybar
-exec wl-paste --watch clipman store --no-persist
-bindsym $mod+v exec clipman pick -t rofi
+exec wl-paste --watch cliphist store
+bindsym $mod+v exec sh -c 'cliphist list | rofi -dmenu -display-columns 2 | cliphist decode | wl-copy'
+#exec wl-paste --watch clipman store --no-persist
+#bindsym $mod+v exec clipman pick -t rofi
 
 # Wallpaper
 output * bg ~/.config/sway/nasa.png fill
